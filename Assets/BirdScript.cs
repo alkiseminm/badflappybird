@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = gravityScale;  // Set custom gravity if needed
+        rb.freezeRotation = true;
     }
 
     void Update()
